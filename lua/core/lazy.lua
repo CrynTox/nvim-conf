@@ -18,6 +18,9 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
   },
+  install = {
+    colorscheme = { "rose-pine", "habamax" },
+  },
   change_detection = { enabled = false },
   performance = {
     rtp = {
