@@ -1,7 +1,8 @@
 return {
   "echasnovski/mini.nvim",
-  config = function(_, opts)
+  config = function()
     require("mini.icons").setup()
+    MiniIcons.mock_nvim_web_devicons()
     require("mini.statusline").setup()
     require("mini.files").setup()
     -- mini files setup --
