@@ -12,8 +12,7 @@ return {
   config = function(_, opts)
     require("snacks").setup(opts)
 
-    local wk = require("which-key")
-    wk.add({
+    WhichKey.add({
       { "<Leader>s", group = "[S]earch" },
     })
   end,
