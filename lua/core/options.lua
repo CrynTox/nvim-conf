@@ -13,7 +13,6 @@ local opts = {
   hlsearch = false,
   ignorecase = true,
   inccommand = "split",
-  laststatus = 3,
   list = true,
   listchars = {
     tab = "» ",
