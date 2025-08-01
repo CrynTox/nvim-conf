@@ -7,6 +7,7 @@ return {
     palette = {
       main = {
         base = "#000000",
+        surface = "#000000",
       },
     },
   },
