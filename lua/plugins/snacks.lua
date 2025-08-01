@@ -7,6 +7,7 @@ return {
   },
   opts = {
     picker = { enabled = true },
+    input = { enabled = true },
   },
   config = function(_, opts)
     require("snacks").setup(opts)
