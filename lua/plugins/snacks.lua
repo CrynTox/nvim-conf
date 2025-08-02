@@ -2,9 +2,7 @@ return {
   "folke/snacks.nvim",
   lazy = false,
   priority = 1000,
-  dependencies = {
-    "which-key.nvim",
-  },
+  dependencies = { "which-key.nvim" },
   opts = {
     picker = { enabled = true },
     input = { enabled = true },
