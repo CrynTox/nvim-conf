@@ -4,6 +4,7 @@ return {
     require("mini.icons").setup()
     MiniIcons.mock_nvim_web_devicons()
 
+    -- TODO: actually setup the statusline
     require("mini.statusline").setup()
 
     require("mini.files").setup()
