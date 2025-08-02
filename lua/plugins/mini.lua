@@ -3,7 +3,9 @@ return {
   config = function()
     require("mini.icons").setup()
     MiniIcons.mock_nvim_web_devicons()
+
     require("mini.statusline").setup()
+
     require("mini.files").setup()
     -- mini files setup --
     vim.api.nvim_create_autocmd("User", {
@@ -27,6 +29,10 @@ return {
       end,
     })
     ----------------------
+
+    require("mini.tabline").setup({
+      tabpage_selection = "right",
+    })
   end,
   keys = {
     { "<Leader>e", function() MiniFiles.open() end, desc = "[E]xplore" },
