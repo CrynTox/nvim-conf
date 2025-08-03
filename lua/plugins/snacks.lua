@@ -17,6 +17,7 @@ return {
     })
   end,
   keys = {
+    -- TODO: merge regular and git file search
     {
       "<Leader>sf",
       function() Snacks.picker.files() end,

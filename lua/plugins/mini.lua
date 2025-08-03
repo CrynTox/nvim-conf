@@ -1,4 +1,5 @@
 return {
+  -- TODO: split the configurations
   "echasnovski/mini.nvim",
   config = function()
     require("mini.icons").setup()
@@ -33,6 +34,11 @@ return {
 
     require("mini.tabline").setup({
       tabpage_selection = "right",
+    })
+
+    require("mini.basics").setup({
+      options = { basic = false },
+      mappings = { windows = true },
     })
   end,
   keys = {
