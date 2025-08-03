@@ -7,6 +7,7 @@ return {
     picker = { enabled = true },
     input = { enabled = true },
     statuscolumn = { enabled = true },
+    terminal = { enabled = true },
   },
   config = function(_, opts)
     require("snacks").setup(opts)
@@ -57,6 +58,13 @@ return {
         Snacks.picker.jumps()
       end,
       desc = "[S]earch [J]umps",
+    },
+    {
+      "<C-/>",
+      function()
+        Snacks.terminal()
+      end,
+      desc = "</> Open Terminal",
     },
   },
 }
