@@ -16,16 +16,12 @@ return {
   keys = {
     {
       "s",
-      function()
-        require("flash").jump()
-      end,
+      function() require("flash").jump() end,
       desc = "[S]eek Flash",
     },
     {
       "<Leader>S",
-      function()
-        require("flash").treesitter()
-      end,
+      function() require("flash").treesitter() end,
       desc = "[S]eek Treesitter",
     },
     { "f" },

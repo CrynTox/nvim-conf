@@ -19,51 +19,37 @@ return {
   keys = {
     {
       "<Leader>sf",
-      function()
-        Snacks.picker.files()
-      end,
+      function() Snacks.picker.files() end,
       desc = "[S]earch [F]iles",
     },
     {
       "<Leader>sF",
-      function()
-        Snacks.picker.git_files()
-      end,
+      function() Snacks.picker.git_files() end,
       desc = "[S]earch Git [F]iles",
     },
     {
       "<Leader>sg",
-      function()
-        Snacks.picker.grep()
-      end,
+      function() Snacks.picker.grep() end,
       desc = "[S]earch [G]rep",
     },
     {
       "<Leader>sh",
-      function()
-        Snacks.picker.help()
-      end,
+      function() Snacks.picker.help() end,
       desc = "[S]earch [H]elp",
     },
     {
       "<Leader>su",
-      function()
-        Snacks.picker.undo()
-      end,
+      function() Snacks.picker.undo() end,
       desc = "[S]earch [U]ndo",
     },
     {
       "<Leader>sj",
-      function()
-        Snacks.picker.jumps()
-      end,
+      function() Snacks.picker.jumps() end,
       desc = "[S]earch [J]umps",
     },
     {
       "<C-/>",
-      function()
-        Snacks.terminal()
-      end,
+      function() Snacks.terminal() end,
       desc = "</> Open Terminal",
     },
   },
