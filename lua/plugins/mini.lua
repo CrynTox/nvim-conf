@@ -14,7 +14,9 @@ return {
       callback = function(args)
         vim.keymap.set("n", "g~", function()
           local path = (MiniFiles.get_fs_entry() or {}).path
-          if path == nil then return vim.notify("Cursor is not on a valid entry") end
+          if path == nil then
+            return vim.notify("Cursor is not on a valid entry")
+          end
           vim.fn.chdir(vim.fs.dirname(path))
         end, { buffer = args.data.buf_id, desc = "Set Current Working Directory" })
       end,
@@ -36,6 +38,12 @@ return {
     })
   end,
   keys = {
-    { "<Leader>e", function() MiniFiles.open() end, desc = "[E]xplore" },
+    {
+      "<Leader>e",
+      function()
+        MiniFiles.open()
+      end,
+      desc = "[E]xplore",
+    },
   },
 }
