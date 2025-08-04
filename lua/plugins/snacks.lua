@@ -49,6 +49,11 @@ return {
       desc = "[S]earch [J]umps",
     },
     {
+      "<Leader>sm",
+      function() Snacks.picker.man() end,
+      desc = "[S]earch [M]an",
+    },
+    {
       "<C-/>",
       function() Snacks.terminal() end,
       desc = "</> Open Terminal",
