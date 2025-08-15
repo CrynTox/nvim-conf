@@ -3,7 +3,7 @@ return {
   opts = {
     modes = {
       char = {
-        keys = { "f", "F", "t", "T" },
+        keys = { "f", "F", "t", "T", ";", "," },
         char_actions = function()
           return {
             [";"] = "next",
