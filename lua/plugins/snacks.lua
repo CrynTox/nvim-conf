@@ -54,6 +54,7 @@ return {
       desc = "[S]earch [M]an",
     },
     {
+      -- FIX: doesn't work in tmux
       "<C-/>",
       function() Snacks.terminal() end,
       desc = "</> Open Terminal",
