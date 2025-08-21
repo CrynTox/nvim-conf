@@ -32,9 +32,7 @@ return {
     })
     ----------------------
 
-    require("mini.tabline").setup({
-      tabpage_selection = "right",
-    })
+    require("mini.tabline").setup({ tabpage_selection = "right" })
 
     require("mini.basics").setup({
       options = { basic = false },
@@ -42,10 +40,6 @@ return {
     })
   end,
   keys = {
-    {
-      "<Leader>e",
-      function() MiniFiles.open() end,
-      desc = "[E]xplore",
-    },
+    { "<Leader>e", function() MiniFiles.open() end, desc = "[E]xplore" },
   },
 }
