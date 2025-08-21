@@ -35,6 +35,7 @@ local opts = {
   undolevels = 10000,
   updatetime = 250,
   virtualedit = { "block" },
+  winborder = "rounded",
   wrap = false,
 }
 
