@@ -6,6 +6,6 @@ return {
   },
   config = function(_, opts)
     _G.WhichKey = require("which-key")
-    _G.WhichKey.setup(opts)
+    WhichKey.setup(opts)
   end,
 }

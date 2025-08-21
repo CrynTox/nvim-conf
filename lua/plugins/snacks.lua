@@ -8,55 +8,27 @@ return {
     input = { enabled = true },
     statuscolumn = { enabled = true },
     terminal = { enabled = true },
+    bufdelete = { enabled = true },
   },
   config = function(_, opts)
     require("snacks").setup(opts)
 
     WhichKey.add({
       { "<Leader>s", group = "[S]earch" },
+      { "<Leader>b", group = "[B]uffers" },
     })
   end,
   keys = {
     -- TODO: merge regular and git file search
-    {
-      "<Leader>sf",
-      function() Snacks.picker.files() end,
-      desc = "[S]earch [F]iles",
-    },
-    {
-      "<Leader>sF",
-      function() Snacks.picker.git_files() end,
-      desc = "[S]earch Git [F]iles",
-    },
-    {
-      "<Leader>sg",
-      function() Snacks.picker.grep() end,
-      desc = "[S]earch [G]rep",
-    },
-    {
-      "<Leader>sh",
-      function() Snacks.picker.help() end,
-      desc = "[S]earch [H]elp",
-    },
-    {
-      "<Leader>su",
-      function() Snacks.picker.undo() end,
-      desc = "[S]earch [U]ndo",
-    },
-    {
-      "<Leader>sj",
-      function() Snacks.picker.jumps() end,
-      desc = "[S]earch [J]umps",
-    },
-    {
-      "<Leader>sm",
-      function() Snacks.picker.man() end,
-      desc = "[S]earch [M]an",
-    },
-    {
-      "<C-/>",
-      function() Snacks.terminal() end,
-      desc = "</> Open Terminal",
-    },
+    { "<Leader>sf", function() Snacks.picker.files() end, desc = "[S]earch [F]iles" },
+    { "<Leader>sF", function() Snacks.picker.git_files() end, desc = "[S]earch Git [F]iles" },
+    { "<Leader>sg", function() Snacks.picker.grep() end, desc = "[S]earch [G]rep" },
+    { "<Leader>sh", function() Snacks.picker.help() end, desc = "[S]earch [H]elp" },
+    { "<Leader>su", function() Snacks.picker.undo() end, desc = "[S]earch [U]ndo" },
+    { "<Leader>sj", function() Snacks.picker.jumps() end, desc = "[S]earch [J]umps" },
+    { "<Leader>sm", function() Snacks.picker.man() end, desc = "[S]earch [M]an" },
+    { "<C-/>", function() Snacks.terminal() end, desc = "</> Open Terminal" },
+    { "<Leader>bd", function() Snacks.bufdelete() end, desc = "[B]uffer [D]elete" },
+    { "<Leader>bo", function() Snacks.bufdelete.other() end, desc = "[B]uffer Delete [O]ther" },
   },
 }
