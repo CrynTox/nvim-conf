@@ -1,4 +1,6 @@
 return {
+  -- FIX: find a way to disable the search result occurence counter
+  -- FIX: find a way to show which selection is selected when using gc flags in substitute
   "folke/noice.nvim",
   dependencies = {
     "MunifTanjim/nui.nvim",
