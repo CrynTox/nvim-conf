@@ -1,5 +1,4 @@
 return {
-  -- FIX: find a way to disable the search result occurence counter
   -- FIX: find a way to show which selection is selected when using gc flags in substitute
   "folke/noice.nvim",
   dependencies = {
@@ -14,6 +13,9 @@ return {
           col = "50%",
         },
       },
+    },
+    messages = {
+      view_search = false,
     },
     presets = { lsp_doc_border = true },
   },
