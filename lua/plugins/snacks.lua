@@ -25,6 +25,7 @@ return {
     { "<Leader>su", function() Snacks.picker.undo() end, desc = "[S]earch [U]ndo" },
     { "<Leader>sj", function() Snacks.picker.jumps() end, desc = "[S]earch [J]umps" },
     { "<Leader>sm", function() Snacks.picker.man() end, desc = "[S]earch [M]an" },
+    { "<Leader>sb", function() Snacks.picker.buffers() end, desc = "[S]earch [B]uffers" },
     { "<C-/>", function() Snacks.terminal() end, desc = "</> Open Terminal" },
   },
 }
