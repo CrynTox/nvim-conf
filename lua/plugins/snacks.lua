@@ -8,14 +8,12 @@ return {
     input = { enabled = true },
     statuscolumn = { enabled = true },
     terminal = { enabled = true },
-    bufdelete = { enabled = true },
   },
   config = function(_, opts)
     require("snacks").setup(opts)
 
     WhichKey.add({
       { "<Leader>s", group = "[S]earch" },
-      { "<Leader>b", group = "[B]uffers" },
     })
   end,
   keys = {
@@ -28,7 +26,5 @@ return {
     { "<Leader>sj", function() Snacks.picker.jumps() end, desc = "[S]earch [J]umps" },
     { "<Leader>sm", function() Snacks.picker.man() end, desc = "[S]earch [M]an" },
     { "<C-/>", function() Snacks.terminal() end, desc = "</> Open Terminal" },
-    { "<Leader>bd", function() Snacks.bufdelete() end, desc = "[B]uffer [D]elete" },
-    { "<Leader>bo", function() Snacks.bufdelete.other() end, desc = "[B]uffer Delete [O]ther" },
   },
 }
