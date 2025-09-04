@@ -11,6 +11,7 @@ return {
     },
     "nvim-dap",
   },
+  ft = "java",
   config = function()
     vim.lsp.config("jdtls", {
       init_options = {
