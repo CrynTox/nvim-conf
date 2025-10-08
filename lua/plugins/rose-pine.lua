@@ -11,6 +11,9 @@ return {
         surface = "#000000",
       },
     },
+    highlight_groups = {
+      ColorColumn = { bg = "highlight_low" },
+    },
   },
   config = function(_, opts)
     require("rose-pine").setup(opts)
