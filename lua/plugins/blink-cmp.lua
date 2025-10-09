@@ -1,6 +1,6 @@
 return {
   "saghen/blink.cmp",
-  dependencies = { "rafamadriz/friendly-snippets" },
+  dependencies = { "rafamadriz/friendly-snippets", "mini.nvim" },
   version = "1.*",
   opts = function()
     local mini_icons = require("mini.icons")
