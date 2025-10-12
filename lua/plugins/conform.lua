@@ -4,6 +4,7 @@ return {
     formatters_by_ft = {
       lua = { "stylua" },
       nix = { "nixfmt" },
+      cpp = { "clang-format" },
     },
     format_on_save = {
       lsp_format = "fallbak",
