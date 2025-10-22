@@ -1,6 +1,9 @@
 return {
   "MeanderingProgrammer/treesitter-modules.nvim",
-  dependencies = { "nvim-treesitter/nvim-treesitter" },
+  dependencies = {
+    "nvim-treesitter/nvim-treesitter",
+    branch = "main",
+  },
   ---@module 'treesitter-modules'
   ---@type ts.mod.UserConfig
   opts = {
