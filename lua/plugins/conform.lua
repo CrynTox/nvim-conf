@@ -5,6 +5,7 @@ return {
       lua = { "stylua" },
       nix = { "nixfmt" },
       cpp = { "clang-format" },
+      python = { "ruff" },
     },
     format_on_save = {
       lsp_format = "fallbak",
