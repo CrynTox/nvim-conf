@@ -1,6 +1,7 @@
 return {
   -- FIX: find a way to show which selection is selected when using gc flags in substitute
   "folke/noice.nvim",
+  enabled = false,
   dependencies = {
     "MunifTanjim/nui.nvim",
     "rcarriga/nvim-notify",
