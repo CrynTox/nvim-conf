@@ -12,9 +12,9 @@ return {
   config = function(_, opts)
     require("snacks").setup(opts)
 
-    WhichKey.add({
-      { "<Leader>s", group = "[S]earch" },
-    })
+    -- WhichKey.add({
+    --   { "<Leader>s", group = "[S]earch" },
+    -- })
   end,
   keys = {
     { "<Leader>sf", function() Snacks.picker.files() end, desc = "[S]earch [F]iles" },
