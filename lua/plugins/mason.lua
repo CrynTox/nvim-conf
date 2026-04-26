@@ -1,6 +1,7 @@
 return {
   "mason-org/mason.nvim",
   opts = {
+    PATH = "append",
     ui = {
       icons = {
         package_installed = " ",
