@@ -1,7 +1,6 @@
 return {
   "folke/which-key.nvim",
   lazy = false,
-  enabled = false,
   dependencies = { "mini.nvim" },
   opts = {
     preset = "modern",
