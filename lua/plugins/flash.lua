@@ -10,6 +10,8 @@ return {
             [","] = "prev",
           }
         end,
+        multi_line = false,
+        highlight = { backdrop = false },
       },
     },
   },
