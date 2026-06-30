@@ -4,5 +4,8 @@ return {
     { "mason.nvim", opts = {} },
     "neovim/nvim-lspconfig",
   },
-  opts = {},
+  config = function()
+    require("mason-lspconfig").setup()
+    vim.lsp.enable("neocmake", true)
+  end,
 }
