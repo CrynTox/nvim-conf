@@ -6,6 +6,7 @@ return {
       nix = { "nixfmt" },
       cpp = { "clang-format" },
       python = { "ruff" },
+      cmake = { "cmake-format" },
     },
     format_on_save = {
       lsp_format = "fallbak",
