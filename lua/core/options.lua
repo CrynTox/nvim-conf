@@ -15,7 +15,7 @@ local opts = {
   inccommand = "split",
   list = true,
   listchars = {
-    tab = "» ",
+    tab = "  ",
     trail = "·",
     nbsp = "⍽",
   },
