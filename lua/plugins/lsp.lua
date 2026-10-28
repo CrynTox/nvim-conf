@@ -6,6 +6,8 @@ return {
   },
   config = function()
     require("mason-lspconfig").setup()
-    vim.lsp.enable("neocmake", true)
+    vim.lsp.config("clangd", {
+      cmd = { "clangd", "--experimental-modules-support" },
+    })
   end,
 }
